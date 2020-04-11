@@ -1,0 +1,19 @@
+{
+  "name": "youtube-video-maker",
+  "version": "1.0.0",
+  "description": "Project open source to make automated videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfrmonteiro99/youtube-video-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfrmonteiro99/youtube-video-maker/issues"
+  },
+  "homepage": "https://github.com/lfrmonteiro99/youtube-video-maker#readme"
+}
