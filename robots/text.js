@@ -19,12 +19,18 @@ var nlu = new NaturalLanguageUnderstandingV1({
     url: watsonUrl
 });
 
-async function robot(content){
+const state = require('./state.js')
+
+async function robot(){
+    const content = state.load();
+    
     await fetchContentFromWikipedia(content);
     sanitizeContent(content)
     breakContentIntoSetences(content)
     limitMaximumSentences(content)
     await fetchKeywordsOfAllSentences(content)
+    
+    state.save(content)
     
     
     async function fetchContentFromWikipedia(apiKey){
